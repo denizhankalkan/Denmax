@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'; // Switch yerine Route kullanın
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'; // Switch yerine Route kullanın
 import ProductList from './components/ProductList';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
@@ -22,12 +22,16 @@ const App = () => {
           </ul>
         </nav>
         <hr />
-        <Route exact path="/" component={ProductList} /> {/* Switch yerine Route kullanın */}
-        <Route path="/cart" component={Cart} /> {/* Switch yerine Route kullanın */}
-        <Route path="/checkout" component={Checkout} /> {/* Switch yerine Route kullanın */}
+        <Routes>
+
+        <Route path="/" element={<ProductList />} />
+        <Route path="/cart" component={<Cart />} /> 
+        <Route path="/checkout" component={<Checkout />} /> 
+        </Routes>
       </div>
     </Router>
   );
 };
 
 export default App;
+
