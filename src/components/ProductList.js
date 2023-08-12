@@ -1,17 +1,19 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../actions/cartActions';
+import Header from './Header';
+
 
 const ProductList = () => {
-  const dispatch = useDispatch();
+ // const dispatch = useDispatch();
 
   const handleAddToCart = (product) => {
-    dispatch(addToCart(product));
+    //dispatch(addToCart(product));
   };
 
   return (
     <div>
-      sss
+    <Header/>
       <h2>Travel Carts</h2>
       <ul>
         <li>
