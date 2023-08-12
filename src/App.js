@@ -6,9 +6,8 @@ import Checkout from './components/Checkout';
 
 const App = () => {
   return (
-    <Router>
       <div>
-        <nav>
+        {/* <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -21,7 +20,7 @@ const App = () => {
             </li>
           </ul>
         </nav>
-        <hr />
+        <hr /> */}
         <Routes>
 
         <Route path="/" element={<ProductList />} />
@@ -29,7 +28,6 @@ const App = () => {
         <Route path="/checkout" component={<Checkout />} /> 
         </Routes>
       </div>
-    </Router>
   );
 };
 

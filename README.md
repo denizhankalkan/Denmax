@@ -2,6 +2,6 @@
 
 ###
 
-Denmax! You can buy a travel gift for your friends and family !
+Denmax! Choose your travel destionation. We will plan for you!
 
 Soon !

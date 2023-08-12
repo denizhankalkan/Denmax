@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+.header {
+    background-image: url("../assets/travel.jpg");
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+  color: white;
+  font-family: 'Kalam', cursive;;
+}
