@@ -8,7 +8,7 @@ import CardMedia from '@mui/material/CardMedia';
 import "./TravelCart.css";
 
 function CardComponent(props) {
-    const { imageUrl, title, content, buttonText } = props;
+    const { imageUrl, title, content, buttonText,onButtonClick } = props;
   console.log(imageUrl);
     return (
         <Card className='cart'>
@@ -21,7 +21,8 @@ function CardComponent(props) {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button sx={{ backgroundColor: '#ff5722', color: 'white' }} variant="contained">
+              <Button sx={{ backgroundColor: '#ff5722', color: 'white' }} variant="contained"
+              onClick={onButtonClick}>
                 {props.buttonText}
               </Button>
             </CardActions>
