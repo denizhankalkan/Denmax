@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./ProductList.css";
+import "../HomePage/ProductList.css";
 
 
 export default class Header extends Component {

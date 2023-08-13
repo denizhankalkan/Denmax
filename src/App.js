@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'; // Switch yerine Route kullanın
-import ProductList from './components/ProductList';
-import Cart from './components/Cart';
-import Checkout from './components/Checkout';
+import ProductList from './components/HomePage/ProductList';
+import Cart from './components/TravelCard/Cart';
+import Checkout from './components/Payment/Checkout';
 
 const App = () => {
   return (

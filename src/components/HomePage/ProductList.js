@@ -1,15 +1,26 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
-import { addToCart } from '../actions/cartActions';
-import Header from './Header';
-import TravelCart from './TravelCart';
-import Footer from './Footer';
+import React, {useState} from 'react';
+//import { useDispatch } from 'react-redux';
+//import { addToCart } from '../../../services/actions/cartActions';
+import Header from '../Header/Header';
+import TravelCart from '../TravelCard/TravelCart';
+import Footer from '../Footer/Footer';
+import PopupComponent from '../TravelCardPopup/popup';
 
 const ProductList = () => {
+  const [popupOpen, setPopupOpen] = useState(false);
+
  // const dispatch = useDispatch();
 
   const handleAddToCart = (product) => {
     //dispatch(addToCart(product));
+  };
+
+  const openPopup = () => {
+    setPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setPopupOpen(false);
   };
 
   return (
@@ -22,6 +33,7 @@ const ProductList = () => {
         imageUrl="../assets/hungary.jpg"
         buttonText="Hungary"
         title="hungary"
+        onButtonClick={openPopup}
       />
       <TravelCart
         imageUrl="../assets/italy.jpg"
@@ -32,6 +44,13 @@ const ProductList = () => {
         imageUrl="../assets/france.jpg"
         buttonText="France"
         title="france"
+      />
+
+      <PopupComponent
+        open={popupOpen}
+        onClose={closePopup}
+        title="Dates-Travels"
+        content="Contents"
       />
     </div>
       <ul>
