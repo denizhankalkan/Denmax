@@ -1,0 +1,38 @@
+
+
+.header {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5E7B7;
+}
+
+.top-header {
+  justify-content: space-between; /* row, space between */
+  direction: row;
+  align-items: center;
+  position: absolute;
+}
+
+.image-grid {
+    background-image: url("../../assets/travel.jpg");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+ .header {
+  height: 350px;
+  background-size: cover;
+  background-image: url("../../assets/travel.jpg");
+  background-color: '#F5E7B7';
+  padding: '20px';
+  display: 'flex';
+  justify-content: 'center';
+  align-items: 'center';
+}
+
+.title {
+  color: white;
+  font-family: 'Kalam', cursive;;
+}

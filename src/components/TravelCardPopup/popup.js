@@ -7,6 +7,10 @@ import Button from '@mui/material/Button';
 
 function PopupComponent(props) {
   const { open, onClose, title, content } = props;
+  //const [open, setOpen] = React.useState(false);
+
+  const handleRedirect = () => {
+    window.location.href = '/new-page';  };
 
   return (
     <Dialog open={open} onClose={onClose}>
@@ -15,9 +19,10 @@ function PopupComponent(props) {
         <p>{content}</p>
       </DialogContent>
       <DialogActions>
-        <Button onClick={onClose} color="primary">
+        <Button onClick={handleRedirect} color="primary">
           Go to travel plan!
         </Button>
+        
       </DialogActions>
     </Dialog>
   );
